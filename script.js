@@ -30,6 +30,16 @@ const restaurant = {
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
 
+// Resetting the variable names
+const {
+	name: restaurantName,
+	openingHours: hours,
+	categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
+
+// Default values
+
 /*
 /////////////////////////////
 /DESTRUCTURING ARRAYS
