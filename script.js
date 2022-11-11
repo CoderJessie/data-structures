@@ -18,5 +18,15 @@ const [x, y, z] = arr;
 console.log(x, y, z);
 console.log(arr);
 
-const [first, second] = restaurant.categories;
-console.log(first, second);
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+// If we want to switch the main and secondary values:
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary);
+
+// With destructuring we do it this way:
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
