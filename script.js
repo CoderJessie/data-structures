@@ -56,6 +56,10 @@ console.log(undefined || null);
 
 console.log(undefined || 0 || '' || 'Hello' || 23 || null);
 
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
 /*
 /////////////////////////////////
 // Rest Pattern and Parameters
