@@ -48,6 +48,21 @@ const restaurant = {
 	},
 };
 
+/////////////////////////////////
+// Coding challenge #1
+
+/*
+We're building a football betting app (soccer for my American Friends)
+
+Suppose we get data from a web service about a certain game (below). In this challenge we're gonna work with the data. So here are your tasks:
+
+1. Create one player array for each team (variables 'players1' and 'players2')
+2. The first player in any player array is the goalkeeper and the others are field players. for Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
+3. Create an array 'allPlayers' containing all players of both teams (22 players)
+4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a new array ('players1Final') containing all the original team1 players plus 'Thiago', 'Coutinho' and 'Perisic'
+5. 
+
+
 ///////////////////////////
 // Nullish Coalescing Operator
 restaurant.numGuests = 0;
@@ -58,7 +73,6 @@ console.log(guests);
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
 
-/*
 ////////////////////////////////////
 // Short Circuiting (&& and ||)
 
@@ -128,6 +142,7 @@ add(...x);
 restaurant.orderPizza('mushrooms', 'onions', 'olives', 'spinach');
 restaurant.orderPizza('mushrooms'); 
 
+/*
 ///////////////////////////////
 // Spread Operator
 const arr = [7, 8, 9];
