@@ -69,7 +69,25 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Levandowski' and 'Kimich'. The
 GOOD LUCK
 */
 
-const game = {};
+const game = {
+	team1: 'Bayern Munich',
+	team2: 'Borrussia Dortmund',
+	players: [
+		[
+			'Never',
+			'Pavard',
+			'Martinez',
+			'Alaba',
+			'Davies',
+			'Kimmich',
+			'Goretzka',
+			'Coman',
+			'Muller',
+			'Gnarby',
+			'Lewandowski',
+		],
+	],
+};
 
 ///////////////////////////
 // Nullish Coalescing Operator
