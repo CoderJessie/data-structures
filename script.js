@@ -57,7 +57,7 @@ We're building a football betting app (soccer for my American Friends)
 Suppose we get data from a web service about a certain game (below). In this challenge we're gonna work with the data. So here are your tasks:
 
 1. Create one player array for each team (variables 'players1' and 'players2')
-2. The first player in any player array is the goalkeeper and the others are field players. for Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
+2. The first player in any player array is the goalkeeper and the others are field players. For Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
 3. Create an array 'allPlayers' containing all players of both teams (22 players)
 4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a new array ('players1Final') containing all the original team1 players plus 'Thiago', 'Coutinho' and 'Perisic'
 5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
@@ -74,7 +74,7 @@ const game = {
 	team2: 'Borrussia Dortmund',
 	players: [
 		[
-			'Never',
+			'Neuer',
 			'Pavard',
 			'Martinez',
 			'Alaba',
@@ -110,6 +110,27 @@ const game = {
 	},
 };
 
+const [players1, players2] = game.players;
+console.log(players1, players2);
+const gk = players1[0];
+const fieldPlayers = [
+	players1[1],
+	players1[2],
+	players1[3],
+	players1[4],
+	players1[5],
+	players1[6],
+	players1[7],
+	players1[8],
+	players1[9],
+	players1[10],
+];
+console.log(fieldPlayers);
+
+const allPlayers = [game.players];
+console.log(allPlayers);
+
+/*
 ///////////////////////////
 // Nullish Coalescing Operator
 restaurant.numGuests = 0;
