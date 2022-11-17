@@ -132,6 +132,14 @@ const {
 } = game;
 console.log(team1, draw, team2);
 
+// 6.
+const printGoals = function (...players) {
+	console.log(`${players.length} goals where scored`);
+};
+// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+// printGoals('Davies', 'Muller');
+printGoals(...game.scored);
+
 /*
 ///////////////////////////
 // Nullish Coalescing Operator
@@ -180,7 +188,7 @@ restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 // 1) Destructuring
 
 // SPREAD, because its on the right side of =
-const arr = [1, 2, ...[3, 4]];
+const arr =${, 2, ..${, }]];
 
 // REST, because its on the left side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
