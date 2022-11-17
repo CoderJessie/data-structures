@@ -112,6 +112,7 @@ const game = {
 
 const [players1, players2] = game.players;
 console.log(players1, players2);
+
 const gk = players1[0];
 const fieldPlayers = [
 	players1[1],
@@ -129,6 +130,12 @@ console.log(fieldPlayers);
 
 const allPlayers = [game.players];
 console.log(allPlayers);
+
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
+console.log(players1Final);
+
+const { team1: team1, x: draw, team2: team2 } = game.odds;
+console.log(team1, draw, team2);
 
 /*
 ///////////////////////////
