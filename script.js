@@ -64,7 +64,7 @@ Suppose we get data from a web service about a certain game (below). In this cha
 6. Write a function('printGoals') that receives an arbitrary number of player names (NOT an array) and prints each of them to the console, along with the number of goals who were scored (number of player names passed in)
 7. The team with the lower odd is more likely to win. Print to the console which yteam is likely to win, WITHOUT using an if/else statement or the ternary operator.
 
-TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Levandowski' and 'Kimich'. Then, call the function again with players from game.scorerd
+TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Levandowski' and 'Kimmich'. Then, call the function again with players from game.scorerd
 
 GOOD LUCK
 */
@@ -110,31 +110,26 @@ const game = {
 	},
 };
 
+// 1.
 const [players1, players2] = game.players;
 console.log(players1, players2);
 
-const gk = players1[0];
-const fieldPlayers = [
-	players1[1],
-	players1[2],
-	players1[3],
-	players1[4],
-	players1[5],
-	players1[6],
-	players1[7],
-	players1[8],
-	players1[9],
-	players1[10],
-];
-console.log(fieldPlayers);
+// 2.
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
 
-const allPlayers = [game.players];
+// 3.
+const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
 
+// 4.
 const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
 
-const { team1: team1, x: draw, team2: team2 } = game.odds;
+// 5.
+const {
+	odds: { team1, x: draw, team2 },
+} = game;
 console.log(team1, draw, team2);
 
 /*
