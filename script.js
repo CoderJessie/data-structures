@@ -140,6 +140,10 @@ const printGoals = function (...players) {
 // printGoals('Davies', 'Muller');
 printGoals(...game.scored);
 
+// 7.
+team1 < team2 && console.log('Team1 is more likely to win');
+team1 > team2 && console.log('Team2 is more likely to win');
+
 /*
 ///////////////////////////
 // Nullish Coalescing Operator
