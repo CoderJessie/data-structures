@@ -48,6 +48,10 @@ const restaurant = {
 	},
 };
 
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) console.log(item);
+
 /////////////////////////////////
 // Coding challenge #1
 
@@ -67,7 +71,6 @@ Suppose we get data from a web service about a certain game (below). In this cha
 TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Levandowski' and 'Kimmich'. Then, call the function again with players from game.scorerd
 
 GOOD LUCK
-*/
 
 const game = {
 	team1: 'Bayern Munich',
@@ -144,7 +147,6 @@ printGoals(...game.scored);
 team1 < team2 && console.log('Team1 is more likely to win');
 team1 > team2 && console.log('Team2 is more likely to win');
 
-/*
 ///////////////////////////
 // Nullish Coalescing Operator
 restaurant.numGuests = 0;
