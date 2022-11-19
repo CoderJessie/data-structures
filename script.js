@@ -52,6 +52,12 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 for (const item of menu) console.log(item);
 
+for (const item of menu.entries()) {
+	console.log(item);
+}
+
+// console.log(...menu.entries());
+
 /////////////////////////////////
 // Coding challenge #1
 
