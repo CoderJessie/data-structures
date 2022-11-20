@@ -48,6 +48,19 @@ const restaurant = {
 	},
 };
 
+////////////////////////////////////////
+// Coding Challenge #2
+
+/*
+Let's continue with our football betting app!
+
+1. Loop over the game.scored array and print each player name to the console, along with the goal number (Example: "Goal 1: Lewandowski")
+2. use a loop to calculate the average odd and log it to the console (We already studied how to calculate averages, you can go check if you don't remember)
+3.Print the 3 odds to the console, but in a nice formatted way, exactly like this:
+
+/*
+//////////////////////////////////    
+// LOOPING OBJECTS,OBJECT KEYS,VALUES & ENTRIES
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
@@ -71,7 +84,7 @@ for (const [key, { open, close }] of entries) {
 	console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
 
-/*
+
 ////////////////////////////////////
 // Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon)
@@ -272,10 +285,8 @@ const [pizza, , risotto, ...otherFood] = [
 	...restaurant.mainMenu,
 	...restaurant.starterMenu,
 ];
-console.log(pizza, risotto, otherFood);
-
-// Objects
-const { sat, ...weekDays } = restaurant.openingHours;
+console.log(pizza, risotto, otherFoodOOPING OBJECTS
+OBJECT{ sat, ...weekDays } = restaurant.openingHours;
 console.log(weekDays);
 
 // 2) Functions
