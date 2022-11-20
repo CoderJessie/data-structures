@@ -48,9 +48,14 @@ const restaurant = {
 	},
 };
 
-if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon.open);
+if (restaurant.openingHours && restaurant.openingHours.mon)
+	console.log(restaurant.openingHours.mon.open);
 
-if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
+// console.log(restaurant.openingHours.mon.open);
+
+// WITH optional chaining
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
 
 /* 
 //////////////////////////////////
