@@ -48,6 +48,18 @@ const restaurant = {
 	},
 };
 
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+console.log(`We are open on ${properties.length} days`);
+
+for (const day of Object.keys(openingHours)) {
+	console.log(day);
+}
+
+/*
+////////////////////////////////////
+// Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon)
 	console.log(restaurant.openingHours.mon.open);
 
@@ -78,7 +90,6 @@ console.log(users[0]?.name ?? 'User array empty');
 if (users.length > 0) console.log(users[0].name);
 else console.log('User array empty'); //without optional chaining
 
-/* 
 //////////////////////////////////
 // the for-of loop
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
