@@ -72,6 +72,66 @@ BONUS: Create an object called 'scorers' which contains the names of the players
 GOOD LUCK
 */
 
+// SOLUTION
+
+const game = {
+	team1: 'Bayern Munich',
+	team2: 'Borrussia Dortmund',
+	players: [
+		[
+			'Neuer',
+			'Pavard',
+			'Martinez',
+			'Alaba',
+			'Davies',
+			'Kimmich',
+			'Goretzka',
+			'Coman',
+			'Muller',
+			'Gnarby',
+			'Lewandowski',
+		],
+		[
+			'Burki',
+			'Schulz',
+			'Hummels',
+			'Akanji',
+			'Hakimi',
+			'Weigl',
+			'Witsel',
+			'Hazard',
+			'Brandt',
+			'Sancho',
+			'Gotze',
+		],
+	],
+	score: '4:0',
+	scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+	date: 'Nov 9th, 2037',
+	odds: {
+		team1: 1.33,
+		x: 3.25,
+		team2: 6.5,
+	},
+};
+
+// 1.
+for (const [i, player] of game.scored.entries())
+	console.log(`Goal ${i + 1}: ${player}`);
+
+// 2.
+const odds = Object.values(game.odds);
+let avrg = 0;
+for (const odd of Object.values(game.odds)) avrg += odd;
+avrg /= odds.length;
+console.log(avrg);
+
+// 3.
+for (const [team, odd] of Object.entries(game.odds)) {
+	const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
+	console.log(`Odd of ${teamStr}: ${odd}`);
+}
+
 /*
 //////////////////////////////////    
 // LOOPING OBJECTS,OBJECT KEYS,VALUES & ENTRIES
@@ -163,7 +223,7 @@ Suppose we get data from a web service about a certain game (below). In this cha
 TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Levandowski' and 'Kimmich'. Then, call the function again with players from game.scored
 
 GOOD LUCK
-*/
+
 
 const game = {
 	team1: 'Bayern Munich',
@@ -206,7 +266,6 @@ const game = {
 	},
 };
 
-/*
 // 1.
 const [players1, players2] = game.players;
 console.log(players1, players2);
