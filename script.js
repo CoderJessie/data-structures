@@ -48,7 +48,8 @@ const restaurant = {
 	},
 };
 
-const orderSet = new Set([
+// Working With Sets
+const ordersSet = new Set([
 	'Pasta',
 	'Pizza',
 	'Pizza',
@@ -56,7 +57,17 @@ const orderSet = new Set([
 	'Pasta',
 	'Pizza',
 ]);
-console.log(orderSet);
+console.log(ordersSet);
+
+console.log(new Set(`Jonas`));
+
+console.log(ordersSet.size);
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Risotto');
+console.log(ordersSet);
 
 ////////////////////////////////////////
 // Coding Challenge #2
