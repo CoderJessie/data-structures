@@ -48,6 +48,16 @@ const restaurant = {
 	},
 };
 
+const orderSet = new Set([
+	'Pasta',
+	'Pizza',
+	'Pizza',
+	'Risotto',
+	'Pasta',
+	'Pizza',
+]);
+console.log(orderSet);
+
 ////////////////////////////////////////
 // Coding Challenge #2
 
@@ -115,6 +125,7 @@ const game = {
 	},
 };
 
+/*
 // 1.
 for (const [i, player] of game.scored.entries())
 	console.log(`Goal ${i + 1}: ${player}`);
