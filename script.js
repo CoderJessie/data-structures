@@ -48,7 +48,19 @@ const restaurant = {
 	},
 };
 
-// Working With Sets
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenze, Italy');
+console.log(rest.set(2, 'Lisbon, Portugal'));
+
+rest
+	.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+	.set('open', 11)
+	.set('close', 23);
+
+/*
+/////////////////////////////////////
+// Sets
 const ordersSet = new Set([
 	'Pasta',
 	'Pizza',
