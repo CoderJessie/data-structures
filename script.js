@@ -48,6 +48,27 @@ const restaurant = {
 	},
 };
 
+const airLine = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airLine.length);
+console.log('B737'.length);
+
+console.log(airLine.indexOf('r'));
+console.log(airLine.lastIndexOf('r'));
+console.log(airLine.indexOf('Portugal')); // It's case sensitive (upper or lower case)
+
+console.log(airLine.slice(4));
+console.log(airLine.slice(4, 7));
+
+console.log(airLine.slice(0, airLine.indexOf(' ')));
+console.log(airLine.slice(airLine.lastIndexOf(' ') + 1));
+
 //////////////////////////////////
 // Coding Challenge #3
 
@@ -77,6 +98,7 @@ const gameEvents = new Map([
 	[92, 'Yellow card'],
 ]);
 
+/*
 // 1.
 const events = [...new Set(gameEvents.values())];
 console.log(events);
@@ -87,7 +109,7 @@ console.log(gameEvents);
 
 // 3.
 console.log(
-	`An event happened, on average, every ${90 / gameEvents.size} minutes`
+	`An event happened, on average, every $(0 / gameEvents.size} minutes`
 );
 
 // BONUS
