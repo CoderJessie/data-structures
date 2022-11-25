@@ -63,11 +63,11 @@ console.log(airLine.indexOf('r'));
 console.log(airLine.lastIndexOf('r'));
 console.log(airLine.indexOf('Portugal')); // It's case sensitive (upper or lower case)
 
-// console.log(airLine.slice(4));
-// console.log(airLine.slice(4, 7));
+console.log(airLine.slice(4));
+console.log(airLine.slice(4, 7));
 
-// console.log(airLine.slice(0, airLine.indexOf(' ')));
-// console.log(airLine.slice(airLine.lastIndexOf(' ') + 1));
+console.log(airLine.slice(0, airLine.indexOf(' ')));
+console.log(airLine.slice(airLine.lastIndexOf(' ') + 1));
 
 //////////////////////////////////
 // Coding Challenge #3
