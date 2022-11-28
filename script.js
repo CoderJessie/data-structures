@@ -49,6 +49,25 @@ const restaurant = {
 };
 
 const airLine = 'TAP Air Portugal';
+
+console.log(airLine.toLowerCase());
+console.log(airLine.toUpperCase());
+
+// Fix capitalization in name
+const passenger = 'jOnAS'; // Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+	passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Comparing Email
+const email = 'hello@jonas.io';
+const loginEmail = '  Hello@Jonas.Io \n';
+
+/*
+/////////////////////////////////////
+// Working With Strings - Part 1
+const airLine = 'TAP Air Portugal';
 const plane = 'A320';
 
 console.log(plane[0]);
@@ -82,6 +101,11 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
+
+console.log(new String('Jonas'));
+console.log(typeof new String('Jonas'));
+
+console.log(typeof new String('Jonas').slice(1));
 
 //////////////////////////////////
 // Coding Challenge #3
