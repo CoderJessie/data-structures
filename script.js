@@ -48,6 +48,19 @@ const restaurant = {
 	},
 };
 
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas Schmedtmann'.split(' '));
+
+const [firstName, lastName] = 'Jonas Schmedtmann'.split(' ');
+console.log(firstName, lastName);
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
+
+/*
+////////////////////////////////////
+// Working With Strings - Part 2
+
 const airLine = 'TAP Air Portugal';
 
 console.log(airLine.toLowerCase());
@@ -108,7 +121,6 @@ checkBaggage('I have a laptop, some Food and a pocket knife');
 checkBaggage('Socks and camera');
 checkBaggage('Got some snacks and a gun for protection');
 
-/*
 /////////////////////////////////////
 // Working With Strings - Part 1
 const airLine = 'TAP Air Portugal';
