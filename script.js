@@ -63,12 +63,40 @@ const capitalizeName = function (name) {
 	const namesUpper = [];
 
 	for (const n of names) {
-		namesUpper.push(n[0].toUpperCase() + n.slice(1));
+		// namesUpper.push(n[0].toUpperCase() + n.slice(1));
+		namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
 	}
 	console.log(namesUpper.join(' '));
 };
 capitalizeName('jessica ann smith davies');
 capitalizeName('jessica walter');
+
+// Padding a String
+const message = 'Go to gate 23!';
+console.log(message.padStart(20, '+').padEnd(30, '+'));
+console.log('Jessica'.padStart(20, '+').padEnd(30, '+'));
+
+// Example
+const maskCreditCard = function (number) {
+	const str = number + ''; // Another way to convert into a string; when one of the operand is a string then it converts all the operands to a string.
+	const last = str.slice(-4);
+	return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(64637836));
+console.log(maskCreditCard(43378463864647384));
+console.log(maskCreditCard('334859493847755774747'));
+
+// Repeat method: Allows us to repeat the same string multiple times
+const message2 = 'Bad Weather... All Departures Delayed...';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+	console.log(`There are ${n} planes in line ${'!'.repeat(n)}`);
+};
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
 
 /*
 ////////////////////////////////////
