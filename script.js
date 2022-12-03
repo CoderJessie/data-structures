@@ -64,11 +64,11 @@ Some_Variable
 delayed_departure
 
 SHOULD PRODUCE THIS OUTPUT (5 seperate console.log outputs)
-underscoreCase
-firstName
-someVariable
-calculateAge
-delayedDeparture
+underscoreCase				  ✅
+firstName							 	✅✅
+someVariable   					✅✅✅
+calculateAge						✅✅✅✅
+delayedDeparture				✅✅✅✅✅
 
 HINT 1: Remember which character defines a new line in the textarea
 HINT 2: The soluton only needs to work for a variable made out of 2 words, like a_b
